@@ -10,9 +10,15 @@
   <title>Bikcraft</title>
 </head>
 
-<body>
+<body class="mudar">
   <header>
-    <img class="bikcraft" src="./img/bikcraft.svg" alt="logo da Bikcraft">
+
+      
+    <div class="button">
+      <div class="ball"></div>
+    </div>
+<div class="bikcraft"></div>
+
     <nav>
       <ul class="menu">
         <li><a href="#">Sobre</a></li>
@@ -58,6 +64,12 @@
   <footer>
     <p>Bikcraft. Alguns Direitos Reservados.</p>
   </footer>
+  <script>
+    document.querySelector('.ball').addEventListener('click', (e) => {
+      e.target.classList.toggle('ball-move');
+      document.body.classList.toggle('mudar');
+    });
+  </script>
 </body>
 
 </html>
